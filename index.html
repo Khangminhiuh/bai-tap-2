@@ -111,7 +111,7 @@
             width: 200px;
             height: 30px;
             position: relative;
-            right: 45px;
+            left: -50px;
         }
         .Address-in{
             width: 365px;
@@ -202,6 +202,26 @@
             vertical-align: -2px;
             accent-color: #75b82b;
         }
+        input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    background-color: white;
+}
+input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    width: 8px;      
+    height: 8px;
+    background: #75b82b;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
         .comments{
             width: 630px;
             height: 120px;
