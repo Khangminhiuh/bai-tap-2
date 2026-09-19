@@ -6,21 +6,19 @@
     <title>Jackson Electronics</title>
     <style>
         body{
-            margin: 0;
             font-family: "Time New Roman";
             color: black;
         }
         .container{
-            width: 1200px;
+            width: 1100px;
             box-sizing: border-box;
-            margin: 10px auto;
             background-color: #a9d7f5;
             padding: 20px 45px 15px;
-            height: 1140px;
+            height: 993px;
             
         }
         .logo{
-            width: 600px;
+            width: 450px;
             margin: -15px auto 35px;
             text-align: center;
             border: 2px solid black;
@@ -37,17 +35,20 @@
             border-radius: 20px 20px 0 0;
             border-bottom: 6px solid black;
             padding: 5px 10px;
-            font-size: 70px;
+            font-size: 35px;
             font-weight: bold;
             
         }
         .bot-logo{
             background-color: aqua;
             padding: 10px;
-            font-size: 70px;
+            font-size: 35px;
             font-weight: bold;
         }
-        h1 {
+        h1{
+            margin-top: -15px;
+        }
+        h2 {
             text-align: center;
             font-size: 40px;
             margin: 0 0 -25px;
@@ -128,13 +129,13 @@
             width: 75px;
             height: 30px;
             POSITION: relative;
-            right: 70px;
+            right: 67px;
         }
         .Zip-in{
             width: 130px;
             height: 30px;
             POSITION: relative;
-            right: 255px;
+            right: 258px;
         }
         .state-label2{
             position: relative;
@@ -144,7 +145,7 @@
         }
         .state-tablet3{
             position: relative;
-            right: -100px;
+            right: -80px;
             white-space: nowrap;
             font-weight: bold;
             right: 190px;
@@ -173,7 +174,7 @@
         }
         .last-name{
             position: relative;
-            right: -20px;
+            right: -15px;
         white-space: nowrap;
             font-weight: bold;
 
@@ -187,8 +188,7 @@
             display: block;
             width: 900px;
             border-bottom: 2px solid black;
-            position: relative;
-            right: -99px;
+            margin-left: 100px;
             
         }
         .noun-space td{
@@ -196,28 +196,19 @@
         }
         input[type="radio"] , input[type="checkbox"]{
             margin-left: 120px;
+            margin-bottom: -2px;
             width: 20px;
             height: 20px;
-            vertical-align: middle;
+            vertical-align: -2px;
             accent-color: #75b82b;
-        }
-        .used-right{
-            position: relative;
-            right: 185px;
-            top: -10px;
-        }
-        .right{
-            position: relative;
-            right: 185px;
         }
         .comments{
             width: 630px;
-            height: 180px;
+            height: 120px;
             box-sizing: border-box;
             resize: none;
             font-size: 18px;
-            position: relative;
-            right: -120px;
+           margin-left: 120px;
         }
         .button{
             padding-top: 10px;
@@ -227,26 +218,27 @@
             top: -10px;
         }
         button[type="submit"]{
-           width: 200px;
-            height: 30px;
-            font-size: 18px;
+           width: 150px;
+            height: 20px;
+            font-size: 14px;
             padding: auto;
         }
         button[type="reset"]{
-            width: 200px;
-            height: 30px;
-            font-size: 18px;
+            width: 150px;
+            height: 20px;
+            font-size: 14px;
             padding: auto;
         }
     </style>
 </head>
 <body>
     <div class="container">
+<h1>
 <div class="logo">
     <div class="top-logo">Jackson</div>
     <div class="bot-logo">Electronics</div>
-</div>
-<h1>Registration Form</h1>
+</div></h1>
+<h2>Registration Form</h2>
 <div class="intro">Register your Jackson Electronics product here</div>
 <form>
     <table class="begin-tablet">
@@ -308,7 +300,7 @@
         </td>
         </tr>
         <tr>
-             <td class="tablet">Date Purchase:</td>
+             <td class="tablet">Date Purchased:</td>
             <td>
                 <input type="text" class="Date-in">
             </td>
