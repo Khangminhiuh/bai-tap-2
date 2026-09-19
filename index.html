@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Electronics</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: "Time New Roman";
+            color: black;
+        }
+        .container{
+            width: 1200px;
+            box-sizing: border-box;
+            margin: 10px auto;
+            background-color: #a9d7f5;
+            padding: 20px 45px 15px;
+            height: 1140px;
+            
+        }
+        .logo{
+            width: 600px;
+            margin: -15px auto 35px;
+            text-align: center;
+            border: 2px solid black;
+            box-shadow: 10px 10px 15px #777;
+            overflow: hidden;
+            border-radius: 20px;
+            position: relative;
+            top: -5px;
+            font-family: "Time New Roman";
+            
+        }
+        .top-logo{
+            background-color: aqua;
+            border-radius: 20px 20px 0 0;
+            border-bottom: 6px solid black;
+            padding: 5px 10px;
+            font-size: 70px;
+            font-weight: bold;
+            
+        }
+        .bot-logo{
+            background-color: aqua;
+            padding: 10px;
+            font-size: 70px;
+            font-weight: bold;
+        }
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin: 0 0 -25px;
+        }
+        .intro{
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 10px;
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: 60px;
+            width: 1000px;
+        }
+        .begin-tablet{
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 20px;
+        } 
+        .begin-tablet td{
+            padding: 5px 0;
+            vertical-align: middle;
+        }
+        .tablet{
+            width: 340px;
+            font-weight: bold;
+            position: relative;
+            right: -100px;
+            white-space: nowrap;
+        }    
+        .tablet2{
+            width: 340px;
+            font-weight: bold;
+            position: relative;
+            right: -100px;
+            white-space: nowrap;
+            top: -13px;
+        }
+        .tablet3{
+            width: 340px;
+            font-weight: bold;
+            position: relative;
+            right: -100px;
+            white-space: nowrap;
+            top: -20px;
+        }
+        input[type="text"]{
+            height: 30px;
+            border: 1px solid #aaa;
+            background-color: white;
+            font-size: 18px;
+            margin-left: 70px;
+        }
+        .name_in{
+            width: 230px;
+            height: 30px;
+            position: relative;
+            right: -50px;
+        }
+        .name_in2{
+            width: 200px;
+            height: 30px;
+            position: relative;
+            right: 45px;
+        }
+        .Address-in{
+            width: 365px;
+            height: 30px;
+            position: relative;
+            right: -50px;
+        } 
+        .City-in{
+            width: 270px;
+            height: 30px;
+            position: relative;
+            right: -50px;
+        }
+        .State-in{
+            width: 75px;
+            height: 30px;
+            POSITION: relative;
+            right: 70px;
+        }
+        .Zip-in{
+            width: 130px;
+            height: 30px;
+            POSITION: relative;
+            right: 255px;
+        }
+        .state-label2{
+            position: relative;
+            right: -50px;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+        .state-tablet3{
+            position: relative;
+            right: -100px;
+            white-space: nowrap;
+            font-weight: bold;
+            right: 190px;
+        }
+        .Country-in{
+            width: 270px;
+            height: 30px;
+            position: relative;
+            right: -50px;
+        }
+        .Product-in{
+            width: 200px;
+            height: 35px;
+            position: relative;
+            right: -120px;
+        }
+        .Date-in{
+            width: 270px;
+          position: relative;
+            right: -50px;  
+        }
+        .Serial-in{
+            width: 270px;
+             position: relative;
+            right: -50px;  
+        }
+        .last-name{
+            position: relative;
+            right: -20px;
+        white-space: nowrap;
+            font-weight: bold;
+
+        }
+        .Line td{
+            padding: 12px 0;
+            border-bottom: none;
+        }
+        .Line td::after{
+            content: "";
+            display: block;
+            width: 900px;
+            border-bottom: 2px solid black;
+            position: relative;
+            right: -99px;
+            
+        }
+        .noun-space td{
+            padding-top: 10px;
+        }
+        input[type="radio"] , input[type="checkbox"]{
+            margin-left: 120px;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            accent-color: #75b82b;
+        }
+        .used-right{
+            position: relative;
+            right: 185px;
+            top: -10px;
+        }
+        .right{
+            position: relative;
+            right: 185px;
+        }
+        .comments{
+            width: 630px;
+            height: 180px;
+            box-sizing: border-box;
+            resize: none;
+            font-size: 18px;
+            position: relative;
+            right: -120px;
+        }
+        .button{
+            padding-top: 10px;
+            cursor: pointer;
+            position: relative;
+            right: -300px;
+            top: -10px;
+        }
+        button[type="submit"]{
+           width: 200px;
+            height: 30px;
+            font-size: 18px;
+            padding: auto;
+        }
+        button[type="reset"]{
+            width: 200px;
+            height: 30px;
+            font-size: 18px;
+            padding: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="logo">
+    <div class="top-logo">Jackson</div>
+    <div class="bot-logo">Electronics</div>
+</div>
+<h1>Registration Form</h1>
+<div class="intro">Register your Jackson Electronics product here</div>
+<form>
+    <table class="begin-tablet">
+        <tr>
+            <td class="tablet">First Name:</td>
+            <td>
+                <input type="text" class="name_in">
+            </td>
+            <td class="last-name">Last Name:</td>
+            <td>
+                <input type="text" class="name_in2">
+            </td>
+        </tr>
+          <td class="tablet">Address #1:</td>
+          <td colspan="3">
+            <input type="text" class="Address-in">
+          </td>
+        <tr>
+        <td class="tablet">Address #2:</td>
+          <td colspan="3">
+            <input type="text" class="Address-in">
+          </td>
+        </tr>
+        <tr>
+            <td class="tablet">City:</td>
+            <td>
+                <input type="text" class="City-in">
+            </td>  
+                   <td class="state-label2">
+                State:
+            </td>
+            <td>
+                <input type="text" class="State-in">
+            </td>
+                   <td class="state-tablet3">
+                Zip:
+            </td>
+            <td>
+                <input type="text" class="Zip-in">
+            </td>
+        </tr>
+        <tr>
+            <td class="tablet">Country:</td>
+            <td>
+                <input type="text" class="Country-in">
+            </td>   
+        </tr>
+        <tr class="Line">
+            <td colspan="6"></td>
+        </tr>
+        <tr class="noun-space">
+            <td class="tablet">Product:</td>
+            <td><select class="Product-in" style="font-size: 20px">
+                <option>ScanMaster</option>
+                <option>Chi tồi tệ</option>
+                <option>Nhi tồi tệ</option>
+                <option>Khang đẹp trai</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+             <td class="tablet">Date Purchase:</td>
+            <td>
+                <input type="text" class="Date-in">
+            </td>
+        </tr>
+        <tr>
+             <td class="tablet">Serial #:</td>
+            <td>
+                <input type="text" class="Serial-in">
+            </td>
+        </tr>
+        <tr>
+            <td class="tablet3">Used For:
+            </td>
+            <td colspan="2">
+                <label>
+                    <input type="radio" name="used">Home
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="used">Business
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="used">Government
+                </label>
+            </td>
+            <td colspan="3" class="used-right">
+                <label>
+                <input type="radio" name="used">Educational Institution
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="used">Other
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td class="tablet2">
+                System (check all that apply):
+            </td>
+            <td colspan="2">
+                <label>
+                    <input type="checkbox">Windows
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox">Macintosh
+                </label>
+            </td>
+            <td colspan="3" class="right">
+                <label>
+                    <input type="checkbox">Unix
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox">Other
+                </label>
+        </tr>
+         <tr class="Line">
+            <td colspan="6"></td>
+        </tr>
+        <tr class="write-space">
+            <td class="tablet" style="vertical-align: top;">Comments?:
+            </td>
+            <td colspan="5"><textarea class="comments"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="6" class="button">
+                <button type="submit">Click to register</button>
+                <button type="reset">Click to cancel</button>
+            </td>
+        </tr>
+    </table>
+</form>
+    </div>
+</body>
+</html>
